@@ -1,0 +1,108 @@
+/* VARIAVÉS É UMA BOA PRATICA, CASO QUEIRA MUDA UMA COR ELA ESTANDO
+   DECLARADA AQUI FICA MUITO FÁCIL FAZER ISSO.
+*/
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+/*RESET CSS ISSO AUMENTA A COMPATIBILIDADE DE SEU CSS EM NAVEGADORES DIFERENTES*/
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css base reader e body */
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Black', Times;
+    font-size: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    padding-right: 10px;  
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/* css corpo principal da página */
+
+.conteudo-principal{
+    font-size: 16px;  /*tamanho padrão da fonte dos textos */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)100%), url(/img/capa-house.jpg);  /*imagem de fundo da caixa*/
+
+    height: 400px;  /*altura da caixa*/
+    background-size: cover; /*imagem de background com tamanho da caixa*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.conteudo-principal .descricao{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.titulo{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.conteudo-principal .container{
+    margin-top: 15%;
+    width: 70%;
+}
+
+.botao{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 16px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.botao:hover{
+    background-color:white;
+    color: black;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
